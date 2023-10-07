@@ -1,0 +1,29 @@
+{
+    "app": {
+        "port": 3000
+    },
+    "mongo": {
+        "host": "mongodb://localhost",
+        "port": 27017,
+        "dbname": "elates",
+        "name": "elates",
+        "options": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    },
+    "corsOptions": {
+        "origin": "*",
+        "optionsSuccessStatus": 200
+    },
+    "authorization": {
+        "tokenExpiry": 3600,
+        "privateKey": "@@===@@elates=privatekey@@===@@"
+    },
+    "api": {
+        "authtoken": "/auth",
+        "createadmin": "/api/v1/admin",
+        "user": "/api/v1/user/:userId",
+        "admin": "/api/v1/admin/:userId"
+    }
+}
